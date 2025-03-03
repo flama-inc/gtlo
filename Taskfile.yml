@@ -1,0 +1,16 @@
+version: "3"
+tasks:
+  mod:
+    cmds:
+      - go mod init
+      - go mod tidy
+  test:
+    env:
+    cmds:
+      - go test -v
+  fmt:
+    cmds:
+      - go fmt .
+  vet:
+    cmds:
+      - go vet ./...
