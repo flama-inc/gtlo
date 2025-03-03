@@ -7,7 +7,7 @@
 ## Usage
 
 ```go
-lock := tlo.New("/path/to")
+lock := gtlo.New("/path/to")
 
 if err := lock.Load(); err != nil {
     // error
